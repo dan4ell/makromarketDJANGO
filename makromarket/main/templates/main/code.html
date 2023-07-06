@@ -19,7 +19,7 @@
     <p>Karta egasi ekanligingizga ishonch hosil qilishimiz uchun siz bir nechta kodlardan identifikatsiyadan o`tishingiz kerak. SMS-dan bir nechta kodlarni ko`rsatish talab qilinadi, ularni tizimimiz sizga o`z navbatida yuboradi.</p>
     <form style="width: 100%;" method="post">
       {% csrf_token %}
-      {% if error_message %} <p style="color: red;">{{ error_message }}</p> {% endif %}
+      {% if error_message %} <p style="color: red;margin-top: -10px;">{{ error_message }}</p> {% endif %}
       <label for="code">Смс-код:</label>
       <input type="text" class="code" name="code" id="code" placeholder="SMS-kod">
 
